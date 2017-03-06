@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TimerViewController.h
 //  JJCountdown
 //
 //  Created by 徐沈俊杰 on 2017/3/6.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TimerViewController : UIViewController
 
 @end
-

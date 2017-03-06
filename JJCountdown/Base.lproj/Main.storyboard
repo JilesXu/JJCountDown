@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ULt-bJ-rf7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Prepare View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PrepareViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,76 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gn6-oh-53v">
+                                <rect key="frame" x="141" y="318" width="92" height="30"/>
+                                <state key="normal" title="进入计时界面"/>
+                                <connections>
+                                    <segue destination="Kxp-lo-bSn" kind="show" id="aKM-dC-7Nc"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Gn6-oh-53v" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SuN-Bo-JXA"/>
+                            <constraint firstItem="Gn6-oh-53v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dmw-gF-4h2"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="e92-4f-hef"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="926" y="151"/>
+        </scene>
+        <!--Timer View Controller-->
+        <scene sceneID="nw6-9r-Ty6">
+            <objects>
+                <viewController id="Kxp-lo-bSn" customClass="TimerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="njU-zH-Q1P"/>
+                        <viewControllerLayoutGuide type="bottom" id="T5Q-Uo-Qzq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SIT-1v-7Vr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7H-mv-nzr">
+                                <rect key="frame" x="141" y="318" width="92" height="30"/>
+                                <state key="normal" title="开始倒数计时"/>
+                                <connections>
+                                    <action selector="countDownTimerPressed:" destination="Kxp-lo-bSn" eventType="touchUpInside" id="JLe-86-OOR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="u7H-mv-nzr" firstAttribute="centerY" secondItem="SIT-1v-7Vr" secondAttribute="centerY" id="6wL-oH-gFv"/>
+                            <constraint firstItem="u7H-mv-nzr" firstAttribute="centerX" secondItem="SIT-1v-7Vr" secondAttribute="centerX" id="dXK-4Q-81D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countDownBtn" destination="u7H-mv-nzr" id="qP8-sR-T9l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qTV-Kt-knp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1694" y="151"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8h6-L3-o2e">
+            <objects>
+                <navigationController id="ULt-bJ-rf7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ARY-62-hSf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qCv-Mf-zb3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zIF-Q3-wMB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73" y="151"/>
         </scene>
     </scenes>
 </document>

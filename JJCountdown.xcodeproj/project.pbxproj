@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		072274901E6D99E700DD24D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722748F1E6D99E700DD24D3 /* main.m */; };
 		072274931E6D99E700DD24D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 072274921E6D99E700DD24D3 /* AppDelegate.m */; };
-		072274961E6D99E700DD24D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 072274951E6D99E700DD24D3 /* ViewController.m */; };
 		072274991E6D99E700DD24D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 072274971E6D99E700DD24D3 /* Main.storyboard */; };
 		0722749B1E6D99E700DD24D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0722749A1E6D99E700DD24D3 /* Assets.xcassets */; };
 		0722749E1E6D99E700DD24D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0722749C1E6D99E700DD24D3 /* LaunchScreen.storyboard */; };
 		072274A91E6D99E700DD24D3 /* JJCountdownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 072274A81E6D99E700DD24D3 /* JJCountdownTests.m */; };
 		072274B41E6D99E700DD24D3 /* JJCountdownUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 072274B31E6D99E700DD24D3 /* JJCountdownUITests.m */; };
+		072274C31E6D9C3400DD24D3 /* PrepareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 072274C21E6D9C3400DD24D3 /* PrepareViewController.m */; };
+		072274C61E6D9C6C00DD24D3 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 072274C51E6D9C6C00DD24D3 /* TimerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +40,6 @@
 		0722748F1E6D99E700DD24D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		072274911E6D99E700DD24D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		072274921E6D99E700DD24D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		072274941E6D99E700DD24D3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		072274951E6D99E700DD24D3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		072274981E6D99E700DD24D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0722749A1E6D99E700DD24D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0722749D1E6D99E700DD24D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,10 @@
 		072274AF1E6D99E700DD24D3 /* JJCountdownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JJCountdownUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		072274B31E6D99E700DD24D3 /* JJCountdownUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJCountdownUITests.m; sourceTree = "<group>"; };
 		072274B51E6D99E700DD24D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		072274C11E6D9C3400DD24D3 /* PrepareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrepareViewController.h; sourceTree = "<group>"; };
+		072274C21E6D9C3400DD24D3 /* PrepareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrepareViewController.m; sourceTree = "<group>"; };
+		072274C41E6D9C6C00DD24D3 /* TimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
+		072274C51E6D9C6C00DD24D3 /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +106,12 @@
 			children = (
 				072274911E6D99E700DD24D3 /* AppDelegate.h */,
 				072274921E6D99E700DD24D3 /* AppDelegate.m */,
-				072274941E6D99E700DD24D3 /* ViewController.h */,
-				072274951E6D99E700DD24D3 /* ViewController.m */,
-				072274971E6D99E700DD24D3 /* Main.storyboard */,
+				072274C11E6D9C3400DD24D3 /* PrepareViewController.h */,
+				072274C21E6D9C3400DD24D3 /* PrepareViewController.m */,
+				072274C41E6D9C6C00DD24D3 /* TimerViewController.h */,
+				072274C51E6D9C6C00DD24D3 /* TimerViewController.m */,
 				0722749A1E6D99E700DD24D3 /* Assets.xcassets */,
+				072274971E6D99E700DD24D3 /* Main.storyboard */,
 				0722749C1E6D99E700DD24D3 /* LaunchScreen.storyboard */,
 				0722749F1E6D99E700DD24D3 /* Info.plist */,
 				0722748E1E6D99E700DD24D3 /* Supporting Files */,
@@ -276,7 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				072274961E6D99E700DD24D3 /* ViewController.m in Sources */,
+				072274C61E6D9C6C00DD24D3 /* TimerViewController.m in Sources */,
+				072274C31E6D9C3400DD24D3 /* PrepareViewController.m in Sources */,
 				072274931E6D99E700DD24D3 /* AppDelegate.m in Sources */,
 				072274901E6D99E700DD24D3 /* main.m in Sources */,
 			);
